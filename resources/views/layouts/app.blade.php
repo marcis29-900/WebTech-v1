@@ -24,7 +24,8 @@
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a style="font-size: 200%;" class="navbar-brand" href="{{ url('/') }}">
-                    S_VHS
+
+
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -33,7 +34,9 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-
+                      <div class="bg-img" style="position: relative; margin-top: -25px; ">
+                          <img style="position: absolute; top: -10px; z-index: 9999; width: 6vw; height: auto;" src="img/s_vhs.png" alt="logo">
+                      </div>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -56,6 +59,9 @@
                                     <a style="margin-right: 20px;" href="http://127.0.0.1:8000/snippets">@lang('home.snippet_menu')</a>
                                     <a style="margin-right: 20px;" href="http://127.0.0.1:8000/about">@lang('home.about_menu')</a>
                                     <a style="margin-right: 20px;" href="http://127.0.0.1:8000/downloads">@lang('home.download_menu')</a>
+                                    @if (Auth::user()->permissions == 1)
+                                      <a style="margin-right: 20px;" href="http://127.0.0.1:8000/permissions">@lang('permissions.main')</a>
+                                    @endif
                                 </li>
                             </div>
 

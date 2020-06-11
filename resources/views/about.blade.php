@@ -7,7 +7,7 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header-tapes">
-                    what are we any why are we
+                    @lang('about.about_head')
                 </div>
 
                 <div class="card-body">
@@ -17,13 +17,13 @@
                         </div>
                     @endif
                     <div style="justify-content: center; text-align: center; font-size: 80%;">
-                        <p>We are international organization promoting music and videos from new artists all over the world.</p>
+                        <p>@lang('about.first')</p>
                         <p></p>
-                        <p>Out aim is to make this platform the go-to way to make someone heard or seen. We are all about new artists.</p>
+                        <p>@lang('about.second')</p>
                         <p></p>
-                        <p>Also, we have a gallery of tapes that can be exchanged with other users and download section for free stuff that everyone can use in their craft.</p>
+                        <p>@lang('about.third')</p>
                         <p></p>
-                        <h1>HEAR US OUT ©</h1>
+                        <h1>@lang('about.fourth')</h1>
                     </div>
 
                 </div>

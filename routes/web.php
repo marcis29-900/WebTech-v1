@@ -29,3 +29,6 @@ Route::get('/tapes', 'tapesController@index')->name('tapes');
 Route::get('/snippets', 'snippetsController@index')->name('snippets');
 Route::get('/about', 'aboutController@index')->name('about');
 Route::get('/downloads', 'downloadsController@index')->name('downloads');
+Route::get('/link-submission', 'postController@index')->name('postLink');
+Route::get('/permissions', 'Auth\PermissionController@index')->name('index');
+Route::resource('posts', 'FileController');

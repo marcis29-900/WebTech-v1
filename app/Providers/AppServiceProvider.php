@@ -5,7 +5,9 @@ use Illuminate\Database\Schema\Builder; // Import Builder where defaultStringLen
 
 
 
+
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\Schema;
 
 class AppServiceProvider extends ServiceProvider
 {

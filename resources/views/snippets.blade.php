@@ -7,7 +7,7 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header-tapes">
-                    listen to newest snippets from our producers
+                    @lang('snippets.snippets_head')
                 </div>
 
                 <div class="card-body">

@@ -14,8 +14,8 @@
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card">
-                <div class="card-header-tapes">@lang('tapes.tape_head')
-                    pick a tape you are interested in and we'll notify the user 
+                <div class="card-header-tapes">
+                    @lang('tapes.tape_head')
                 </div>
 
                 <div class="card-body">
@@ -41,19 +41,19 @@
                               <p></p>
                               <img src="img/awge1.png" alt="AWGE DVD VOL. 1" width="250px" height="250px">
                               <p></p>
-                              <button type="button" class="btn btn-outline-danger btn-lg" onclick="showDesc()">ORDER</button>
+                              <button type="button" class="btn btn-outline-danger btn-lg" onclick="showDesc()">@lang('tapes.order_menu')</button>
                               <p style="font-size: 80%; color: red;" id="demo"></p>
                             </div>
                             <div class="col-md-4">AWGE DVD VOL.2
                               <p></p>
                                 <img src="img/awge2.png" alt="AWGE DVD VOL. 1" width="250px" height="250px">
                                 <p></p>
-                                <button type="button" class="btn btn-outline-danger btn-lg" onclick="showDesc2()">ORDER</button>
+                                <button type="button" class="btn btn-outline-danger btn-lg" onclick="showDesc2()">@lang('tapes.order_menu')</button>
                                 <p style="font-size: 80%; color: red;" id="demo2"></p>
                             </div>
                             <div class="col-md-4">AWGE DVD VOL.3
                                 <p></p>
-                                COMING SOON...
+                                @lang('tapes.coming_soon')
                                 <p></p>
                             </div>
                     </div>
